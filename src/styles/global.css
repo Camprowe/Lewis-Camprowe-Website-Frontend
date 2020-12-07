@@ -1,0 +1,35 @@
+html {
+    background-color: lavenderblush;
+}
+
+.container {
+    background-color: white !important;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+
+.item {
+    flex-grow: 1;
+}
+
+.about {
+    display: flex;
+    flex-grow: 3 !important;
+    justify-content: center;
+    position: relative;
+}
+
+.content {
+    width: 75%;
+    text-align: left;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.headerImage {
+    display: flex;
+    justify-content: center;
+}
