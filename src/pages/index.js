@@ -1,10 +1,11 @@
 import React from "react"
-import { Link } from "gatsby"
+import { Link, graphql} from "gatsby"
+import Img from "gatsby-image"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const IndexPage = () => (
+const IndexPage = ({data}) => (
   <Layout>
     <SEO title="Home" />
     {/* Header/About */}
@@ -19,7 +20,7 @@ const IndexPage = () => (
         </div>
       </div>
       <div className="item headerImage">
-        <img src="https://i.imgur.com/2ph07zo.png" />
+        <Img fixed={data.file.childImageSharp.fixed} alt="THis is an image of Lewis Matthew Campbell"/>
       </div>
     </section>
     {/* Blog */}
@@ -34,3 +35,17 @@ const IndexPage = () => (
 )
 
 export default IndexPage
+
+export const query = graphql`
+  query {
+    file(relativePath: { eq: "Profile_Picture.png" }) {
+      childImageSharp {
+        # Specify the image processing specifications right in the query.
+        # Makes it trivial to update as your page's design changes.
+        fixed(quality: 100) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+  }
+`;
