@@ -1,0 +1,27 @@
+.section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+}
+.section h1 {
+    text-transform: uppercase;
+    font-size:5vw;
+    background-color: #1c1c1c;
+    color: #ffef00;
+    padding: 0 1em;
+}
+
+.section p {
+    text-align: center;
+}
+
+.socials {
+    display: inline-flex;
+    flex-direction: row;
+    padding: 1em;
+    width: 75%;
+    align-items: center;
+    justify-content: space-between;
+}
