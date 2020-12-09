@@ -3,9 +3,27 @@ import blogSectionStyles from "./blogSection.module.css"
 
 export default function blogSection(props) {
   return <section className={blogSectionStyles.section}>
-            <h1>About</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce molestie est et neque rhoncus, et luctus lorem iaculis. Quisque porta in massa eget finibus. Nulla molestie tellus et tempor commodo. Proin iaculis nisi vitae ante elementum lobortis eu et quam. Fusce fermentum lacus ut mauris dapibus, vitae scelerisque est commodo. In hac habitasse platea dictumst. Phasellus tincidunt lorem sapien, non scelerisque metus congue ut. Quisque condimentum turpis sed neque congue volutpat. Nulla blandit id tortor a commodo. Donec id scelerisque leo. Cras at facilisis velit. Cras ornare dictum lorem vel tempor. Nulla congue metus sit amet mauris rutrum scelerisque. Morbi libero turpis, posuere pulvinar tortor et, volutpat volutpat enim. Sed efficitur tellus eget porta interdum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus consequat tellus vel finibus rutrum. In hac habitasse platea dictumst. Quisque semper tincidunt quam id fringilla. Maecenas ipsum augue, varius sit amet augue sed, ultricies placerat tellus.</p>
-        </section>
+            <h1>Blog</h1>
+            <div className={blogSectionStyles.gridContainer}>
+              <div className={blogSectionStyles.gridItem}>
+                <img src="https://images.unsplash.com/photo-1607514835229-e4d12ac1acdc?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80" />
+                <div className={blogSectionStyles.details}>
+                  <h2>This is a title</h2>
+                  <p>This is a brief description of the blog post</p>
+                  <p>THis is a date.</p>
+                </div>
+              </div>
+              <div className={blogSectionStyles.gridItem}>
+                <img src="https://images.unsplash.com/photo-1607514835229-e4d12ac1acdc?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80" />
+                <div className={blogSectionStyles.details}>
+                  <h2>This is a title</h2>
+                  <p>This is a brief description of the blog post</p>
+                  <p>THis is a date.</p>
+                </div>
+              </div>              
+            </div>
+            <a href="./blog" className={"button"}>More Posts</a>
+          </section>
 }
 
 

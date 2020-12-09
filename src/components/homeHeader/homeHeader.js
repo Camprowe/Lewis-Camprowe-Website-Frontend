@@ -5,7 +5,7 @@ import Img from "gatsby-image"
 import TextLoop from "react-text-loop";
 
 export default function homeHeader(props) {
-  return <section className={homeHeaderStyles.homeHeader}>
+  return <section className={homeHeaderStyles.section}>
         <Header/>
         <Img fluid={props.headerImage} className={homeHeaderStyles.headerImage} alt="..." />          
           <div className={homeHeaderStyles.make}>
