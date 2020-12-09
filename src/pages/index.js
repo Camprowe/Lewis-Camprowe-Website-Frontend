@@ -1,14 +1,13 @@
 import React from "react"
 import HomeHeader from "../components/homeHeader/homeHeader"
+import AboutSection from "../components/aboutSection/aboutSection"
 import { graphql } from "gatsby"
 
 export default function Home({data}) {
   return (
     <>
       <HomeHeader headerImage={data.file.childImageSharp.fluid} />
-      <section className="homeAbout">
-        <h2>About</h2>
-      </section>
+      <AboutSection />
     </>
   );
 }
