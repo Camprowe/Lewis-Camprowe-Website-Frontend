@@ -31,7 +31,7 @@
     padding: 1em;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
+    width: 50%;
 }
 
 .socials ul {
@@ -44,3 +44,9 @@
 .socials svg {
     width: 3em;
 }
+
+@media screen and (max-width: 768px) {
+    .socials {
+        width: 100%;
+    }
+  }

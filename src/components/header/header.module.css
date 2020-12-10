@@ -15,12 +15,22 @@
     padding: 0.5em 1em;
 }
 
+.logo a {
+    color: #ffef00;
+    text-decoration: none;
+}
+
 .blog {
     color: #ffffff;
     padding: 1em 1em 1em 0;
     font-size: 1em;
     font-weight: 400;
     margin-left: auto;
+}
+
+.blog a {
+    color: #ffffff;
+    text-decoration: none;
 }
 
 @media screen and (max-width: 768px) {
