@@ -9,7 +9,7 @@
 .logo {
     font-weight: 600;
     text-transform: uppercase;
-    font-size:2vw;
+    font-size:1.5em;
     background-color: #1c1c1c;
     color: #ffef00;
     padding: 0.5em 1em;
@@ -18,7 +18,7 @@
 .blog {
     color: #ffffff;
     padding: 1em 1em 1em 0;
-    font-size: 1.25vw;
+    font-size: 1em;
     font-weight: 400;
     margin-left: auto;
 }

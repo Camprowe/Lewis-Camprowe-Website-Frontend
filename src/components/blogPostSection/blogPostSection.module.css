@@ -3,7 +3,7 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    padding: 1em;
+    padding: 0.5em 1em;
 }
 .section h1 {
     text-transform: uppercase;
@@ -34,11 +34,6 @@
     text-align: left;
     background-color: #ffffff;
     padding: 1em;
-    font-size: 1em;
-}
-
-.details h2 {
-    font-weight: 600;
 }
 
 @media screen and (max-width: 768px) {

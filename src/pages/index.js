@@ -6,9 +6,17 @@ import Footer from "../components/footer/footer"
 import { graphql } from "gatsby"
 
 export default function Home({data}) {
+  const sources = [
+    data.mobileImage.childImageSharp.fluid,
+    {
+      ...data.desktopImage.childImageSharp.fluid,
+      media: `(min-width: 768px)`,
+    },
+  ]
+
   return (
     <>
-      <HomeHeader headerImage={data.file.childImageSharp.fluid} />
+      <HomeHeader headerImage={sources} />
       <AboutSection />
       <BlogSection />
       <Footer />
@@ -18,12 +26,21 @@ export default function Home({data}) {
 
 export const query = graphql`
   query {
-    file(relativePath: { eq: "Venice.png" }) {
+    desktopImage: file(relativePath: { eq: "Venice.png" }) {
       childImageSharp {
         # Specify the image processing specifications right in the query.
         # Makes it trivial to update as your page's design changes.
-        fluid(quality: 100) {
-          ...GatsbyImageSharpFluid
+        fluid(quality: 100, maxWidth: 1920) {
+          ...GatsbyImageSharpFluid_withWebp_noBase64
+        }
+      }
+    }
+    mobileImage: file(relativePath: { eq: "Venice_Mobile.png" }) {
+      childImageSharp {
+        # Specify the image processing specifications right in the query.
+        # Makes it trivial to update as your page's design changes.
+        fluid(quality: 100, maxWidth: 768) {
+          ...GatsbyImageSharpFluid_withWebp_noBase64
         }
       }
     }

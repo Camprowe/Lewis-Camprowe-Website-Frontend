@@ -12,7 +12,7 @@
 .logo {
     font-weight: 600;
     text-transform: uppercase;
-    font-size:3vw;
+    font-size:2em;
     background-color: #1c1c1c;
     color: #ffef00;
     padding: 0.5em 1em;
@@ -24,7 +24,8 @@
     padding: 1em;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
+    width: 50%;
+    font-size: 1em;
 }
 
 .socials ul {
@@ -37,3 +38,13 @@
 .socials svg {
     width: 3em;
 }
+
+@media screen and (max-width: 768px) {
+    .logo {
+        font-size: 1em;
+     }
+
+    .socials {
+        width: 100%;
+    }
+  }
