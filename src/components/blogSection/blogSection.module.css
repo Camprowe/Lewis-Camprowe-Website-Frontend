@@ -16,7 +16,7 @@
 .gridContainer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    width: 100%;
+    width: 75%;
     padding: 1em;
     grid-template-rows: 1fr;
 }
@@ -43,14 +43,20 @@
     font-weight: 600;
 }
 
+.details a {
+    color: #1c1c1c;
+    text-decoration: none;
+}
+
 @media screen and (max-width: 768px) {
     .gridContainer {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
+        width: 100%
      }
   
      .gridItem {
       grid-column: auto;
       grid-row: auto;
     }
-  }
+}

@@ -1,6 +1,8 @@
 import { graphql } from 'gatsby'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
 import React from 'react'
+import BlogHeader from "../blogHeader/blogHeader"
+import Footer from "../footer/footer"
 
 export const query = graphql
     `
@@ -11,7 +13,14 @@ export const query = graphql
             body
             frontmatter {
                 title
-                date(formatString: "YYYY MMMM Do")
+                description
+                image {
+                    childImageSharp {
+                      fluid(quality: 100) {
+                        ...GatsbyImageSharpFluid
+                      }
+                    }
+                }
             }
         }
     }
@@ -20,10 +29,10 @@ export const query = graphql
 export default ({ data }) => {
     const { frontmatter, body } = data.mdx
     return (
-        <div>
-            <h1>{frontmatter.title}</h1>
-            <p>{frontmatter.date}</p>
+        <>
+            <BlogHeader headerImage={frontmatter.image.childImageSharp.fluid} title={frontmatter.title} description={frontmatter.description} />
             <MDXRenderer>{body}</MDXRenderer>
-        </div>
+            <Footer />
+        </>
     )
 }

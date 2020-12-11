@@ -15,7 +15,7 @@ export default function Blog({data}) {
 
   return (
     <>
-      <BlogHeader headerImage={sources} />
+      <BlogHeader headerImage={sources} title="Blog" description="This is the blog description" />
       <BlogPostSection posts={data.allMdx.nodes} />
       <Footer />
     </>
@@ -44,7 +44,7 @@ export const query = graphql`
     }
     allMdx(
       sort: {fields: [frontmatter___date], order: DESC},
-      filter: {frontmatter: {published: {eq: true}}},
+      filter: {frontmatter: {published: {eq: true}}}
     ){
         nodes {
             id
@@ -52,6 +52,14 @@ export const query = graphql`
             frontmatter {
                 title
                 date(formatString: "YYYY MMMM Do")
+                image {
+                  childImageSharp {
+                    fluid(quality: 100) {
+                      ...GatsbyImageSharpFluid
+                    }
+                  }
+                }
+                description
             }
             fields {
                 slug
