@@ -16,7 +16,7 @@ export default function Blog({data}) {
   return (
     <>
       <BlogHeader headerImage={sources} />
-      <BlogPostSection />
+      <BlogPostSection posts={data.allMdx.nodes} />
       <Footer />
     </>
   );
@@ -41,6 +41,22 @@ export const query = graphql`
           ...GatsbyImageSharpFluid_withWebp_noBase64
         }
       }
+    }
+    allMdx(
+      sort: {fields: [frontmatter___date], order: DESC},
+      filter: {frontmatter: {published: {eq: true}}},
+    ){
+        nodes {
+            id
+            excerpt(pruneLength: 250)
+            frontmatter {
+                title
+                date(formatString: "YYYY MMMM Do")
+            }
+            fields {
+                slug
+            }
+        }
     }
   }
 `
