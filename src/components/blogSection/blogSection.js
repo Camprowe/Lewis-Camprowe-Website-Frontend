@@ -16,7 +16,7 @@ export default function blogSection(props) {
                     </div>
                 ))}            
             </div>
-            <a href="./blog" className={"button"}>More Posts</a>
+            <Link to="/blog/" className={"button"}>More Posts</Link>
           </section>
 }
 
