@@ -1,6 +1,6 @@
 ---
-title: Digital Transformation is Dead
-description: When the buzzword in digital has lost all meaning, with businesses having completed their digital transformation. What's Next?
+title: What comes after Digital Transformation
+description: The digital industry has been following the mantra of digital transformation for years, it's just about running out now, so what is next.
 image: ../images/post-images/digital-transformation.jpg
 date: 2020-12-12
 published: true

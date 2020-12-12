@@ -4,6 +4,7 @@
       width: 100%;
       z-index: 100;
       padding: 1em;
+      top: 0;
 }
 
 .logo {

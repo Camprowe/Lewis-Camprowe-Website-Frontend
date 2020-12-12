@@ -15,7 +15,7 @@ export default function Blog({data}) {
 
   return (
     <>
-      <BlogHeader headerImage={sources} title="Blog" description="This is the blog description" />
+      <BlogHeader headerImage={sources} title="Blog" description="My musings and learnings as a maker of things. What have I learnt or thought about while making things every week, whether I've been developing a project, creating and growing a brand, worldbuilding places to explore or investigating technologies." />
       <BlogPostSection posts={data.allMdx.nodes} />
       <Footer />
     </>
