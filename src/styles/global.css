@@ -12,11 +12,10 @@ html::-webkit-scrollbar {
 }
 
 .button {
-    background-color: #ffef00;
+    background-color: #422057FF;
     text-transform: uppercase;
-    border: 1px solid #1c1c1c;
     font-weight: 600;
-    color: #1c1c1c;
+    color: #FCF951FF;
     padding: 1em;
     text-align: center;
     text-decoration: none;

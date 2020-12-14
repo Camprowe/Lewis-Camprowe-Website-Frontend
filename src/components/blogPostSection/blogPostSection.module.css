@@ -8,8 +8,8 @@
 .section h1 {
     text-transform: uppercase;
     font-size:2em;
-    background-color: #1c1c1c;
-    color: #ffef00;
+    background-color: #422057FF;
+    color: #FCF951FF;
     padding: 0 1em;
 }
 
@@ -36,6 +36,22 @@
     text-align: left;
     background-color: #ffffff;
     padding: 1em;
+    font-size: 1em;
+}
+
+.details h2 {
+    font-weight: 600;
+    font-size: 1em;
+}
+
+.details p {
+    font-weight: 400;
+    font-size: 1em;
+}
+
+.details a {
+    color: #1c1c1c;
+    text-decoration: none;
 }
 
 @media screen and (max-width: 768px) {

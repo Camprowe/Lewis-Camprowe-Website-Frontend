@@ -1,6 +1,8 @@
 .section {
-    background-color: #1c1c1c;
-    z-index: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .gridContainer {

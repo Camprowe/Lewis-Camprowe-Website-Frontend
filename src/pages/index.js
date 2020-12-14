@@ -18,7 +18,7 @@ export default function Home({data}) {
   return (
     <>
       <Header />
-      <HeaderSection headerImage={sources} />
+      <HeaderSection image={sources} title="Maker of Things" description="The making of something whether physical, digital or something else entirely, is the most exciting thing anyone can do. This is my outlet to discuss and share all the things I have and will be making." />
       <AboutSection />
       <BlogSection posts={data.allMdx.nodes} />
       <Footer />
@@ -28,7 +28,7 @@ export default function Home({data}) {
 
 export const query = graphql`
   query {
-    desktopImage: file(relativePath: { eq: "Venice.png" }) {
+    desktopImage: file(relativePath: { eq: "Venice.jpg" }) {
       childImageSharp {
         # Specify the image processing specifications right in the query.
         # Makes it trivial to update as your page's design changes.
@@ -37,7 +37,7 @@ export const query = graphql`
         }
       }
     }
-    mobileImage: file(relativePath: { eq: "Venice.png" }) {
+    mobileImage: file(relativePath: { eq: "Venice.jpg" }) {
       childImageSharp {
         # Specify the image processing specifications right in the query.
         # Makes it trivial to update as your page's design changes.

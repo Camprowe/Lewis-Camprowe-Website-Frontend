@@ -8,8 +8,8 @@
 .section h1 {
     text-transform: uppercase;
     font-size:2em;
-    background-color: #1c1c1c;
-    color: #ffef00;
+    background-color: #422057FF;
+    color: #FCF951FF;
     padding: 0 1em;
 }
 
@@ -31,7 +31,7 @@
     padding: 1em;
     align-items: center;
     justify-content: space-between;
-    width: 50%;
+    width: 50%;    
 }
 
 .socials ul {
@@ -43,6 +43,7 @@
 }
 .socials svg {
     width: 3em;
+    fill: #422057FF !important;
 }
 
 @media screen and (max-width: 768px) {

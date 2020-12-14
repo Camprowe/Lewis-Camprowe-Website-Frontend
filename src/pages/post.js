@@ -1,6 +1,7 @@
 import { graphql } from 'gatsby'
 import React from 'react'
-import BlogHeader from "../components/blogHeader/blogHeader"
+import Header from "../components/header/header"
+import HeaderImage from "../components/headerSection/headerSection"
 import Footer from "../components/footer/footer"
 import Post from "../components/post/post"
 
@@ -30,7 +31,8 @@ export default ({ data }) => {
     const { frontmatter, body } = data.mdx
     return (
         <>
-            <BlogHeader headerImage={frontmatter.image.childImageSharp.fluid} title={frontmatter.title} description={frontmatter.description} />
+            <Header />
+            <HeaderImage image={frontmatter.image.childImageSharp.fluid} title={frontmatter.title} description={frontmatter.description} />
             <Post body={body} />
             <Footer />
         </>
