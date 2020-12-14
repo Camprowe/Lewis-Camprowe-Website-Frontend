@@ -20,7 +20,7 @@ export default function Home({data}) {
       <Header />
       <HeaderSection image={sources} title="Maker of Things" description="The making of something whether physical, digital or something else entirely, is the most exciting thing anyone can do. This is my outlet to discuss and share all the things I have and will be making." />
       <AboutSection />
-      <BlogSection posts={data.allMdx.nodes} />
+      <BlogSection posts={data.allMdx.nodes} moreposts={true} title="Blog" /> 
       <Footer />
     </>
   );

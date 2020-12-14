@@ -1,7 +1,7 @@
 import React from "react"
 import Header from "../components/header/header"
 import HeaderImage from "../components/headerSection/headerSection"
-import BlogPostSection from "../components/blogPostSection/blogPostSection"
+import BlogSection from "../components/blogSection/blogSection"
 import Footer from "../components/footer/footer"
 import { graphql } from "gatsby"
 
@@ -18,7 +18,7 @@ export default function Blog({data}) {
     <>
       <Header />
       <HeaderImage image={sources} title="Blog" description="My musings and learnings as a maker of things. What have I learnt or thought about while making things every week, whether I've been developing a project, creating and growing a brand, worldbuilding places to explore or investigating technologies." />
-      <BlogPostSection posts={data.allMdx.nodes} />
+      <BlogSection posts={data.allMdx.nodes} title="" /> 
       <Footer />
     </>
   );

@@ -13,6 +13,10 @@
     padding: 0 1em;
 }
 
+.section a {
+    text-decoration: none;
+}
+
 .gridContainer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;

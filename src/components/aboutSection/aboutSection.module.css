@@ -18,13 +18,6 @@
     text-align: left;
 }
 
-.section h3 {
-    text-transform: uppercase;
-    font-size: 1em;
-    font-weight: 600;
-    padding: 0 0.5em;
-}
-
 .socials {
     display: inline-flex;
     flex-direction: row;

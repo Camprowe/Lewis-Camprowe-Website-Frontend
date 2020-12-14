@@ -5,7 +5,9 @@ import Img from "gatsby-image"
 
 export default function blogSection(props) {
   return <section className={blogSectionStyles.section}>
-            <h1>Blog</h1>
+            {props.title.length > 0 &&
+              <Link to="/blog/" ><h1>{props.title}</h1></Link>
+            }
             <div className={blogSectionStyles.gridContainer}>
               {props.posts.map(({ excerpt, frontmatter, fields }) => (
                     <div className={blogSectionStyles.gridItem}>
@@ -17,7 +19,6 @@ export default function blogSection(props) {
                     </div>
                 ))}            
             </div>
-            <Link to="/blog/" className={"button"}>More Posts</Link>
           </section>
 }
 
