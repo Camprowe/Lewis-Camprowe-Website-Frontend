@@ -1,8 +1,9 @@
 import React from "react"
-import HomeHeader from "../components/homeHeader/homeHeader"
+import HeaderSection from "../components/headerSection/headerSection"
 import AboutSection from "../components/aboutSection/aboutSection"
 import BlogSection from "../components/blogSection/blogSection"
 import Footer from "../components/footer/footer"
+import Header from "../components/header/header"
 import { graphql } from "gatsby"
 
 export default function Home({data}) {
@@ -16,7 +17,8 @@ export default function Home({data}) {
 
   return (
     <>
-      <HomeHeader headerImage={sources} />
+      <Header />
+      <HeaderSection headerImage={sources} />
       <AboutSection />
       <BlogSection posts={data.allMdx.nodes} />
       <Footer />
@@ -35,7 +37,7 @@ export const query = graphql`
         }
       }
     }
-    mobileImage: file(relativePath: { eq: "Venice_Mobile.png" }) {
+    mobileImage: file(relativePath: { eq: "Venice.png" }) {
       childImageSharp {
         # Specify the image processing specifications right in the query.
         # Makes it trivial to update as your page's design changes.
