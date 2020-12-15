@@ -62,11 +62,13 @@
     .gridContainer {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
-        width: 100%
+        width: 100%;
+        padding: 1em 0;
      }
   
      .gridItem {
       grid-column: auto;
       grid-row: auto;
+      padding: 1em 0;
     }
 }

@@ -1,5 +1,5 @@
 ---
-title: What comes after Digital Transformation
+title: What Follows Digital Transformation
 description: The digital industry has been following the mantra of digital transformation for years, it's just about running out now, so what is next.
 image: ../images/post-images/digital-transformation.jpg
 date: 2020-12-12
