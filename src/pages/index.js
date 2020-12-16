@@ -18,8 +18,6 @@ export default function Home({data}) {
   const metadescription="The making of something whether physical, digital or something else entirely, is the most exciting thing anyone can do. This is the outlet for Lewis to discuss and share all the things he has and will be making.";
   const metatitle="Lewis Matthew Campbell - Maker of Things";
 
-  console.log(sources);
-
   return (
     <>
       <Helmet>

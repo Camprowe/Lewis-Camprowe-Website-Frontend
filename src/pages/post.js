@@ -7,7 +7,7 @@ import Post from "../components/post/post"
 
 export const query = graphql
     `
-    query PostsByID($id: String!) {
+    query MdxBlogPost ($id: String!) {
         mdx(
             id: { eq: $id }
         ){
@@ -28,13 +28,18 @@ export const query = graphql
 `
 
 export default ({ data }) => {
-    const { frontmatter, body } = data.mdx
-    return (
-        <>
-            <Header />
-            <HeaderImage image={frontmatter.image.childImageSharp.fluid} title={frontmatter.title} description={frontmatter.description} />
-            <Post body={body} />
-            <Footer />
-        </>
-    )
+    if (data !== undefined){
+        console.log("Data" + data);
+        const { frontmatter, body } = data.mdx
+        return (
+            <>
+                <Header />
+                <HeaderImage image={frontmatter.image.childImageSharp.fluid} title={frontmatter.title} description={frontmatter.description} />
+                <Post body={body} />
+                <Footer />
+            </>
+        )
+    } else {
+        return (<Header />)
+    }
 }
