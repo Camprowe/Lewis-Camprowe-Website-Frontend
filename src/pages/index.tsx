@@ -8,7 +8,7 @@ const IndexPage: React.FC<PageProps> = () => {
       <nav>
         <div className="max-w-screen-xl h-1/6 flex flex-wrap items-center justify-between mx-auto p-4">
           <a href="/" className="flex items-center">
-              <span className="self-center text-2xl font-semibold whitespace-nowrap text-primary">Lewis Camprowe</span>
+              <span className="self-center text-2xl font-bold whitespace-nowrap text-primary">Lewis Camprowe</span>
           </a>
           <div className="flex md:order-2 flex-wrap justify-center gap-2">
             <button className="p-2 font-semibold inline-flex items-center space-x-2 rounded">
@@ -45,16 +45,16 @@ const IndexPage: React.FC<PageProps> = () => {
         </div>
       </nav>
       {/* Body */}
-      <section className="flex items-center h-5/6 justify-center bg-white">
+      <section className="flex items-center h-5/6 justify-center">
         <div className="mx-auto max-w-[43rem]">
           <div className="text-center">
-            <p className="text-lg font-medium leading-8 text-indigo-600/95">Break from Corporate</p>
-            <h1 className="mt-3 text-[3.5rem] font-bold leading-[4rem] tracking-tight text-black">Distribute your brand from&nbsp;design to code</h1>
-            <p className="mt-3 text-lg leading-relaxed text-slate-400">Specify helps you unify your brand identity by collecting, storing and distributing design tokens and assets — automatically.</p>
+            <p className="text-lg font-extralight leading-8 text-dark">Break from Corporate</p>
+            <h1 className="mt-3 text-[3.5rem] font-semibold leading-[4rem] tracking-tight text-black">Distribute your brand from&nbsp;design to code</h1>
+            <p className="mt-3 text-lg leading-relaxed font-regular">Specify helps you unify your brand identity by collecting, storing and distributing design tokens and assets — automatically.</p>
           </div>
 
           <div className="mt-6 flex items-center justify-center gap-4">
-            <a href="#" className="transform rounded-md bg-indigo-600/95 px-5 py-3 font-medium text-white transition-colors hover:bg-indigo-700"></a>
+            <a href="#" className="transform rounded-md bg-indigo-600/95 px-5 py-3 font-regular text-white transition-colors hover:bg-indigo-700"></a>
             <a href="#" className="transform rounded-md border border-primary px-5 py-3 font-medium text-primary transition-colors hover:bg-slate-50"> Watch </a>
           </div>
         </div>

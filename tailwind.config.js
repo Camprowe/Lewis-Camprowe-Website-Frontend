@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
   content: [
     `./src/pages/**/*.{js,jsx,ts,tsx}`,
@@ -18,8 +19,7 @@ module.exports = {
       'light': '#ffffff'
     },
     fontFamily: {
-      sans: ['Graphik', 'sans-serif'],
-      serif: ['Merriweather', 'serif'],
+      sans: ['Noto', 'sans-serif']
     },
     extend: {},
   },
