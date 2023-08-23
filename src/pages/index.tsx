@@ -52,11 +52,6 @@ const IndexPage: React.FC<PageProps> = () => {
             <h1 className="mt-3 text-[3.5rem] font-semibold leading-[4rem] tracking-tight text-black">Distribute your brand from&nbsp;design to code</h1>
             <p className="mt-3 text-lg leading-relaxed font-regular">Specify helps you unify your brand identity by collecting, storing and distributing design tokens and assets — automatically.</p>
           </div>
-
-          <div className="mt-6 flex items-center justify-center gap-4">
-            <a href="#" className="transform rounded-md bg-indigo-600/95 px-5 py-3 font-regular text-white transition-colors hover:bg-indigo-700"></a>
-            <a href="#" className="transform rounded-md border border-primary px-5 py-3 font-medium text-primary transition-colors hover:bg-slate-50"> Watch </a>
-          </div>
         </div>
       </section>
     </main>
