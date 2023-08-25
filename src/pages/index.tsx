@@ -9,7 +9,7 @@ const IndexPage: React.FC<PageProps> = () => {
         <div className="mx-auto max-w-[43rem]">
           <div className="text-center">
             <p className="text-lg font-extralight leading-8">Lewis Matthew Campbell</p>
-            <h1 className="mt-3 text-[3.5rem] font-semibold leading-[4rem] tracking-tight text-black">Defining my Journeys Next Chapter</h1>
+            <h1 className="mt-3 text-[3.5rem] font-semibold leading-[4rem] tracking-tight text-black">Defining the Journeys Next Chapter</h1>
             <p className="mt-3 text-lg leading-relaxed font-regular">Life is about more than the daily grind, finding what you love. I'm doing just that and I'm sharing the messy, uncertain yet exciting journey. So if you're curious you can follow along and see if it sparks anything for you.</p>
 
 
