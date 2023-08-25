@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://example.com/sitemap.xml
-Sitemap: http://www.example.com/sitemap.xml
+Sitemap: https://lewismcampbell.com/sitemap.xml
