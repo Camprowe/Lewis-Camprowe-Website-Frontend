@@ -15,7 +15,7 @@ module.exports = {
     colors: {
       'primary': '#CF1F30',
       'secondary': '#FDEF6D',
-      'dark': '#000000',
+      'dark': '#121212',
       'light': '#ffffff'
     },
     fontFamily: {

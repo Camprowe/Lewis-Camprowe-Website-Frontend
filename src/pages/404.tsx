@@ -3,7 +3,7 @@ import { HeadFC, PageProps } from "gatsby"
 
 const NotFoundPage: React.FC<PageProps> = () => {
   return (
-    <main className="bg-secondary h-screen">
+    <main lang="en" className="bg-secondary h-screen">
       {/* Body */}
       <section className="flex items-center h-5/6 justify-center">
         <div className="mx-auto max-w-[43rem]">
