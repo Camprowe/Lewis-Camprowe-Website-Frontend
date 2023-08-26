@@ -5,7 +5,7 @@ const NotFoundPage: React.FC<PageProps> = () => {
   return (
     <main lang="en" className="bg-secondary h-screen">
       {/* Body */}
-      <section className="flex items-center h-5/6 justify-center">
+      <section className="flex items-center h-screen justify-center">
         <div className="mx-auto max-w-[43rem]">
           <div className="text-center">
             <p className="text-lg font-medium leading-8 text-dark">404 Page not Found</p>
