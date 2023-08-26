@@ -9,8 +9,8 @@ const IndexPage: React.FC<PageProps> = () => {
         <section className="text-primary flex items-center h-screen justify-center px-5">
           <div className="mx-auto max-w-[43rem]">
             <div className="text-center">
-              <h2 className="text-lg text-dark font-medium leading-8">Lewis Matthew Campbell</h2>
-              <h1 className="mt-3 text-[3.5rem] font-black tracking-tight">Defining the Journeys Next Chapter</h1>
+              <h2 className="text-lg text-dark font-regular leading-8">Lewis Matthew Campbell</h2>
+              <h1 className="mt-3 text-xl font-extrabold tracking-tight">Defining the Journeys Next Chapter</h1>
               <p className="mt-3 text-lg leading-relaxed text-dark font-regular">Life is about more than the daily grind, <span className="font-semibold text-primary">finding what you love.</span> I'm doing just that and I'm sharing the messy, uncertain yet exciting journey. So if you're <span className="font-semibold text-primary">curious</span> you can <span className="font-semibold text-primary">follow along</span> and see if it sparks anything for you.</p>
 
 
