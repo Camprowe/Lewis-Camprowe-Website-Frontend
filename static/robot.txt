@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://lewismcampbell.com/sitemap.xml
+Sitemap: http://www.lewismcampbell.com/sitemap.xml
