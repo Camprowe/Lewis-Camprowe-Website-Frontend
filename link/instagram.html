@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <!-- Use https://app.urlgeni.us/ for the deep links -->
+    </head>
+    <body>
+        <script type="text/javascript">
+            window.onload = function() {
+
+                var desktopFallback = "https://www.instagram.com/lewismcampbell/",
+                mobileFallback = "https://www.instagram.com/lewismcampbell/",
+                androidlink = "intent://www.instagram.com/lewismcampbell/#Intent;package=com.instagram.android;scheme=https;end",
+                applelink = "instagram://user?username=lewismcampbell";
+
+                if( /iPhone|iPad|iPod/i.test(navigator.userAgent) ) {
+                    window.location = applelink;
+                    window.setTimeout(function() {
+                        window.location = mobileFallback;
+                    }, 25);
+                } else if( /Android/i.test(navigator.userAgent) ) {
+                    window.location = androidlink;
+                    window.setTimeout(function() {
+                        window.location = mobileFallback;
+                    }, 25);
+                } else {
+                    window.location = desktopFallback;
+                }
+
+                function killPopup() {
+                    window.removeEventListener('pagehide', killPopup);
+                }
+
+                window.addEventListener('pagehide', killPopup);
+
+            };
+        </script>
+    </body>
+</html>
