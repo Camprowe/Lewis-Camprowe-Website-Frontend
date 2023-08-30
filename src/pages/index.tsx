@@ -10,7 +10,7 @@ const IndexPage: React.FC<PageProps> = () => {
           <div className="mx-auto max-w-[43rem]">
             <div className="text-center">
               <h2 className="text-lg text-dark font-medium leading-8">Lewis Matthew Campbell</h2>
-              <h1 className="mt-3 text-[3.5em] font-black tracking-tight">Working out What Comes Next</h1>
+              <h1 className="mt-3 text-[3.5em] font-black tracking-tight">The Next Chapter</h1>
               <p className="mt-3 text-lg leading-relaxed text-dark font-medium">Life is about more than the daily grind, <span className="font-bold text-primary">finding what you love.</span> I'm doing just that and I'm sharing the messy, uncertain yet exciting journey. So if you're <span className="font-bold text-primary">curious</span> you can <span className="font-bold text-primary">follow along</span> and see if it sparks anything for you.</p>
 
 
@@ -71,15 +71,15 @@ export default IndexPage
 export const Head: HeadFC = () => <>
   <link rel="icon" href="/images/compass.svg"/>
   <link rel="apple-touch-icon" href="/images/compass.svg"/>
-  <title>Lewis Matthew Campbell Personal Site</title>
-  <meta name="description" content="Working out what comes next and Sharing the Journey" />
+  <title>Lewis Matthew Campbell</title>
+  <meta name="description" content="Working out the next chapter and sharing the journey with vidoes across Youtuber, TikTok & Instagram." />
   <meta name="image" content='/images/compass.svg' />
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Lewis Matthew Campbell' Personal Site" />
+  <meta name="twitter:title" content="Lewis Matthew Campbell" />
   <meta name="twitter:url" content='https://lewismcampbell.com' />
-  <meta name="twitter:description" content='Working out what comes next and Sharing the Journey' />
+  <meta name="twitter:description" content='Working out the next chapter and sharing the journey with vidoes across Youtuber, TikTok & Instagram.' />
   <meta name="twitter:image" content='/images/compass.svg' />
   <meta name="twitter:creator" content='@lewismcampbell' />
   <meta name="twitter:image:alt" content="Avatar image of Lewis Matthew Campbell"></meta>
-  <meta property="og:site_name" content="Lewis Matthew Campbell Personal Site"></meta>
+  <meta property="og:site_name" content="Lewis Matthew Campbell"></meta>
 </>
