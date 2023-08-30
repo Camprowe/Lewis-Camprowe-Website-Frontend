@@ -69,16 +69,17 @@ const IndexPage: React.FC<PageProps> = () => {
 export default IndexPage
 
 export const Head: HeadFC = () => <>
+  <link rel="icon" href="/images/compass.svg"/>
+  <link rel="apple-touch-icon" href="/images/compass.svg"/>
   <title>Lewis Matthew Campbell Personal Site</title>
   <meta name="description" content="Working out what comes next and Sharing the Journey" />
-  <meta name="image" content='/images/gatsby-icon.png' />
+  <meta name="image" content='/images/compass.svg' />
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="Lewis Matthew Campbell' Personal Site" />
   <meta name="twitter:url" content='https://lewismcampbell.com' />
   <meta name="twitter:description" content='Working out what comes next and Sharing the Journey' />
-  <meta name="twitter:image" content='/images/gatsby-icon.png' />
+  <meta name="twitter:image" content='/images/compass.svg' />
   <meta name="twitter:creator" content='@lewismcampbell' />
   <meta name="twitter:image:alt" content="Avatar image of Lewis Matthew Campbell"></meta>
   <meta property="og:site_name" content="Lewis Matthew Campbell Personal Site"></meta>
-  <link rel="icon" href="/gatsby-icon.png" />
 </>

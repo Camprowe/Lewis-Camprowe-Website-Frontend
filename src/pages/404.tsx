@@ -22,4 +22,7 @@ const NotFoundPage: React.FC<PageProps> = () => {
 
 export default NotFoundPage
 
-export const Head: HeadFC = () => <title>Not found</title>
+export const Head: HeadFC = () => <>
+  <link rel="icon" href="images/compass.svg"></link>
+  <title>Not found</title>
+</>
