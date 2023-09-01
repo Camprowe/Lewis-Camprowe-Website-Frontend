@@ -11,7 +11,7 @@ const IndexPage: React.FC<PageProps> = () => {
             <div className="text-center">
               <h2 className="text-lg text-dark font-medium leading-8">Lewis Matthew Campbell</h2>
               <h1 className="mt-3 text-[3.5em] font-black tracking-tight">The Next Chapter</h1>
-              <p className="mt-3 text-lg leading-relaxed text-dark font-medium">Life is about more than the daily grind, <span className="font-bold text-primary">finding what you love.</span> I'm doing just that and I'm sharing the messy, uncertain yet exciting journey. So if you're <span className="font-bold text-primary">curious</span> you can <span className="font-bold text-primary">follow along</span> and see if it sparks anything for you.</p>
+              <p className="mt-3 text-lg leading-relaxed text-dark font-medium">Life is about more than the daily grind, it's about <span className="font-bold text-primary">finding what you love.</span> So I'm doing just that and sharing the messy, uncertain yet exciting journey. If you're <span className="font-bold text-primary">curious</span> about what that looks like, you can <span className="font-bold text-primary">follow along</span> and see if it sparks anything for you.</p>
 
 
               <div className="flex md:order-2 flex-wrap justify-center py-5 gap-2 fill-dark">
